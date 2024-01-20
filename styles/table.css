@@ -1,0 +1,88 @@
+.articleTable {
+  margin: 0;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+}
+.articleTable .line td {
+  width: 0px;
+  margin: 0;
+  padding: 0;
+}
+.articleTable .line .borderTd {
+  border-bottom: 1px solid #EEEEEE;
+}
+.articleTable td {
+  padding: 8px 5px 8px 0;
+  text-align: left;
+}
+.articleTable .statusTd {
+  text-align: center;
+}
+.articleTable tr {
+  border-bottom: 1px solid #EEEEEE;
+}
+.articleTable tr:first-child {
+  color: rgb(145, 151, 179);
+}
+.articleTable .statusDivActive, .articleTable .statusDivInactive {
+  width: 80px;
+  height: 29px;
+  margin: auto;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.articleTable .statusDivActive {
+  background: rgba(22, 192, 152, 0.3803921569);
+  border: 1px solid #00B087;
+  color: #00B087;
+}
+.articleTable .statusDivInactive {
+  background: #FFC5C5;
+  border: 1px solid #DF0404;
+  color: #DF0404;
+}
+.articleTable tr td > * {
+  margin-left: 40px;
+}
+.articleTable tr td:first-child {
+  padding-left: 40px;
+  padding-right: 0;
+}
+.articleTable tr td:last-child {
+  text-align: center;
+  padding-right: 20px;
+  height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .articleTable th, .articleTable td {
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding-left: 10px;
+  }
+  .articleTable tr td:first-child {
+    margin: 0;
+    padding-left: 10px;
+  }
+  .articleTable tr td:last-child {
+    padding: 0;
+    justify-content: flex-start;
+    border-bottom: 1px solid #EEEEEE;
+  }
+  .articleTable tr:first-child {
+    display: none;
+  }
+  .articleTable .statusDivActive, .articleTable .statusDivInactive {
+    margin: 0 0 10px 0;
+  }
+  .articleTable .line td {
+    display: none;
+  }
+  .articleTable .line .borderTd {
+    display: none;
+  }
+}/*# sourceMappingURL=table.css.map */

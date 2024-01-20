@@ -1,0 +1,205 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../styles/style.css")
+        link(rel="stylesheet", href="../styles/menu.css")
+        link(rel="stylesheet", href="../styles/table.css")
+        title Customers
+    body 
+        .container 
+            aside
+                header 
+                    .headerContainer
+                        img(src="../img/nut.png", alt="")
+                        h2 Dashboard
+                    p v.01
+                nav
+                    span.menuIcon &#9776;
+                    ul.mainMenu
+                        li
+                            a
+                                img(src="../img/key.png", alt="")
+                                | Dashboard
+                        li
+                            a
+                                img(src="../img/cube.png", alt="")
+                                | Product
+                                p &gt;
+                        li.selectedLi
+                            a
+                                img(src="../img/man.png", alt="")
+                                | Customers
+                                p &gt;
+                        li
+                            a
+                                img(src="../img/wallet.png", alt="")
+                                | Income
+                                p &gt;
+                        li
+                            a
+                                img(src="../img/promotions.png", alt="")
+                                | Promote
+                                p &gt;
+                        li
+                            a
+                                img(src="../img/help.png", alt="")
+                                | Help
+                                p &gt;
+                    .personBlock
+                        .personBlockImg
+                        .personBlockInfo
+                            h5 Evano
+                            p Project Manager
+            main 
+                h2
+                    |Hello Evano
+                    img(src="../img/hand.png", alt="").iconHand
+                    |,
+                article
+                    .articleHeader
+                        div 
+                            h3 All Customers
+                            p Active Members
+                        div 
+                            form(action="")
+                                .searchContainer
+                                    img(src="../img/glass.png", alt="")
+                                    input(type="text" placeholder="Search")
+                    table.articleTable
+                        tr
+                            td
+                            td Customer Name
+                            td Company
+                            td Phone Number
+                            td Email
+                            td Country
+                            td.statusTd Status
+                            td
+                        tr.line
+                            td(colspan="8").borderTd
+                        tr
+                            td
+                            td Jane Cooper
+                            td Microsoft
+                            td (225)555-0188
+                            td jane@microsoft.com
+                            td United States
+                            td
+                                div.statusDivActive Active
+                            td
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Floyd Miles
+                            td Yahoo
+                            td (225)555-0100
+                            td floyd@yahoo.com
+                            td Kiribati
+                            td
+                                div.statusDivInactive Inactive
+                            td
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Ronald Richards
+                            td Adobe
+                            td (302)555-0107
+                            td ronald@adobe.com
+                            td Israel
+                            td
+                                div.statusDivInactive Inactive
+                            td
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Marvin McKinney
+                            td Tesla
+                            td (252)555-0128
+                            td marvin@tesla.com
+                            td Iran
+                            td
+                                div.statusDivActive Active
+                            td
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Jerome Bell
+                            td Google
+                            td (629)555-0129
+                            td jerome@google.com
+                            td Reunlon
+                            td
+                                div.statusDivActive Active
+                            td 
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Kathryn Murphy
+                            td Microsoft
+                            td (408)555-0120
+                            td kathryn@microsoft.com
+                            td Curacao
+                            td
+                                div.statusDivActive Active
+                            td 
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Jacob Jones
+                            td Yahoo
+                            td (208)555-0112
+                            td jacob@yahoo.com
+                            td Brazil
+                            td
+                                div.statusDivActive Active
+                            td 
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                        tr
+                            td
+                            td Kristin Watson
+                            td Facebook
+                            td (704)555-0127
+                            td kristin@facebook.com
+                            td Aland Islands
+                            td
+                                div.statusDivInactive Inactive
+                            td
+                        tr.line
+                            td
+                            td(colspan="6").borderTd
+                            td
+                    .tableControlPanel 
+                        p Showing data 1 to 8 of 256K entries
+                        .tableControlPanelButtons
+                            button.commonButton &lt;
+                            button.selectedButton 1
+                            button.commonButton 2
+                            button.commonButton 3
+                            button.commonButton 4
+                            p ...
+                            button.commonButton 40
+                            button.commonButton &gt;
+        script(src="../scripts/script.js")
